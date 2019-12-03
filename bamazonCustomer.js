@@ -21,8 +21,20 @@ const inquirer = require("inquirer");
 //     if (err) throw err;
 //     console.log(`connected as id ${connection.threadId}`);
 //     connection.end(); //closes connection to db, critical to always do...or replace this with desired function and ensure this line is included at the end of the function
-
+//     afterConnection();
 // });
+
+// function afterConnection() {
+    //     connection.query("SELECT * FROM products", function(err, res) {
+    //         if (err) throw err;
+    //         console.log(res);
+    //         connection.end();
+    //     });
+    // }
+
+
+
+
 
 // Create a "Prompt" with a series of questions.
 inquirer
